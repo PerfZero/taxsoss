@@ -702,7 +702,7 @@ html {
 }
 
 .about-company {
-    margin: 0px 15px;
+    margin: 0px auto;
   border-radius: 40px;
   background-color: #292727;
   width: auto;
@@ -911,6 +911,11 @@ html {
 
   .content__item {
     font-size: 1.5vw;
+  }
+
+  .about-company {
+    margin: 0px 15px;
+
   }
 
   .requirements__image {
