@@ -508,7 +508,7 @@ html {
   max-width: 1368px;
   height: 685px;
   background-color: #fed002;
-  padding: 40px 20px;
+  padding: 40px 27px;
   border-radius: 45px;
 }
 
@@ -531,11 +531,17 @@ html {
 .requirements__list {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 22px;
 }
 
-.requirements__column {
-  width: 50%; /* Ширина каждого столбца */
+.requirements__column ul {
+  padding: 0;
+  margin: 0;
+  /* Другие стили для <ul> элемента */
+}
+
+.requirements__additional ul {
+  padding: 0;
+  /* Другие стили для <ul> элемента */
 }
 
 .requirements__item {
@@ -552,7 +558,7 @@ html {
 .requirements__image {
   width: 750px;
   position: absolute;
-  top: 120px;
+  top: 249px;
   left: 550px;
 }
 
@@ -838,53 +844,51 @@ html {
 }
 
 @media (max-width: 1280px) {
-    body {
-      overflow-x: hidden;
-      margin: 0 auto;
-      width: 100%;
-    }
-    .header__menu-item {
-      font-size: 14px;
-    }
-  
-    .content__image {
-      left: 542px;
-      top: 61px;
-      position: absolute;
-      max-width: 53%;
-      height: auto;
-    }
-  
-    .requirements__image {
-      width: 131px;
-      position: absolute;
-      top: 160px;
-      left: 470px;
-    }
-  
-    .requirements__image img {
-      width: 750px;
-    }
-  
-    .earn-money {
-      margin: 50px auto;
-      background-image: url(/img/div.layer.png);
-      background-size: cover;
-      width: 100%;
-      height: 209px;
-      padding: 20px;
-    }
+  body {
+    overflow-x: hidden;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .header__menu-item {
+    font-size: 14px;
   }
 
+  .content__image {
+    left: 542px;
+    top: 61px;
+    position: absolute;
+    max-width: 53%;
+    height: auto;
+  }
+
+  .requirements__image {
+    width: 131px;
+    position: absolute;
+    top: 160px;
+    left: 470px;
+  }
+
+  .requirements__image img {
+    width: 750px;
+  }
+
+  .earn-money {
+    margin: 50px auto;
+    background-image: url(/img/div.layer.png);
+    background-size: cover;
+    width: 100%;
+    height: 209px;
+    padding: 20px;
+  }
+}
 
 /* Стили для мобильных устройств */
 @media (max-width: 390px) {
-
-    body {
-        overflow-x: hidden;
-        margin: 0 auto;
-        width: auto;
-      }
+  body {
+    overflow-x: hidden;
+    margin: 0 auto;
+    width: auto;
+  }
   .header {
     width: max-content;
     margin: 0;
@@ -1037,7 +1041,7 @@ html {
     left: 0;
   }
 
-  .requirements__image img{
+  .requirements__image img {
     width: 311px;
   }
 
@@ -1146,15 +1150,13 @@ html {
   }
 }
 
-
 /* Стили для мобильных устройств */
 @media (max-width: 430px) {
-
-    body {
-        overflow-x: hidden;
-        margin: 0 auto;
-        width: auto;
-      }
+  body {
+    overflow-x: hidden;
+    margin: 0 auto;
+    width: auto;
+  }
   .header {
     width: max-content;
     margin: 0;
@@ -1255,7 +1257,6 @@ html {
     margin: 10px 10px;
   }
 
-
   .requirements {
     max-width: 390px;
     height: auto;
@@ -1291,7 +1292,7 @@ html {
     /* Другие стили для <ul> элемента */
   }
 
-  .requirements__additional{
+  .requirements__additional {
     padding-bottom: 20px;
   }
 
@@ -1319,7 +1320,7 @@ html {
     left: 0;
   }
 
-  .requirements__image img{
+  .requirements__image img {
     width: 311px;
   }
 
@@ -1420,5 +1421,110 @@ html {
   .contacts__text p:last-child {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    padding: 40px;
+  }
+  .requirements__image {
+    width: 131px;
+    position: absolute;
+    top: 460px;
+    left: 425px;
+  }
+
+
+  .content__text {
+    display: flex;
+    flex: 1;
+    padding-right: 0px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .requirements__image img {
+    width: 341px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .content__title {
+    font-size: 56px;
+  }
+
+  .content__item {
+    font-size: 23px;
+  }
+
+  .content__btn {
+    padding: 17px 80px;
+
+    font-size: 25px;
+  }
+
+  .content__image {
+    left: 0;
+    top: 0;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .footer__nav {
+    display: none;
+  }
+
+  .content__image {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    max-width: 100%;
+    height: auto;
+  }
+  .offer {
+    max-width: 100%;
+  }
+  .offer__card {
+    margin-left: 10px;
+
+    background-repeat: no-repeat;
+    width: 280px;
+  }
+
+  .offer__cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+  }
+
+  .earn-money__circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about-company_wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-para {
+    margin-left: 20px !important;
+  }
+
+  .contacts {
+    padding: 35px 40px;
   }
 }
