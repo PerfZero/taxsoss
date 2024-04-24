@@ -665,12 +665,13 @@ html {
 }
 
 .earn-money__item {
-  color: black; /* Цвет текста */
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 137%;
-  display: flex;
-  text-align: center;
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 137%;
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 .earn-money__circle {
