@@ -913,8 +913,14 @@ html {
     font-size: 1.5vw;
   }
 
+
+.about-company__text p{
+    font-size: 18px;
+}
+
+
   .about-company {
-    margin: 0px 15px;
+    margin: 0px 25px;
 
   }
 
