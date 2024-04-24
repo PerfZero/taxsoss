@@ -234,41 +234,44 @@ html {
 }
 
 .content__text {
-    opacity: 0; /* Начальное состояние: элемент невидимый */
-    transform: translateX(-100%); /* Начальное положение: за пределами видимой области слева */
-    transition: opacity 0.5s, transform 0.9s ease-in-out; /* Плавное изменение прозрачности и положения */
+  opacity: 0; /* Начальное состояние: элемент невидимый */
+  transform: translateX(
+    -100%
+  ); /* Начальное положение: за пределами видимой области слева */
+  transition: opacity 0.5s, transform 0.9s ease-in-out; /* Плавное изменение прозрачности и положения */
 }
 /* Анимация появления при добавлении класса */
 .content__text.active {
-    opacity: 1; /* Постепенное появление элемента */
-    transform: translateX(0); /* Появление слева */
+  opacity: 1; /* Постепенное появление элемента */
+  transform: translateX(0); /* Появление слева */
 }
 
-
 .offer__title {
-    opacity: 0; /* Начальное состояние: элемент невидимый */
-    transform: translateY(-100px); /* Начальное положение: над областью видимости, сверху */
-    transition: opacity 0.5s, transform 1.2s; /* Плавное изменение прозрачности и положения */
+  opacity: 0; /* Начальное состояние: элемент невидимый */
+  transform: translateY(
+    -100px
+  ); /* Начальное положение: над областью видимости, сверху */
+  transition: opacity 0.5s, transform 1.2s; /* Плавное изменение прозрачности и положения */
 }
 
 .offer__card {
-    opacity: 0; /* Начальное состояние: элемент невидимый */
-    transform: translateY(-100px); /* Начальное положение: над областью видимости, сверху */
-    transition: opacity 0.5s, transform 1.9s; /* Плавное изменение прозрачности и положения */
+  opacity: 0; /* Начальное состояние: элемент невидимый */
+  transform: translateY(
+    -100px
+  ); /* Начальное положение: над областью видимости, сверху */
+  transition: opacity 0.5s, transform 1.9s; /* Плавное изменение прозрачности и положения */
 }
 
 /* Анимация появления при добавлении класса */
 .offer__title.active {
-    opacity: 1; /* Постепенное появление элемента */
-    transform: translateY(0); /* Появление сверху */
+  opacity: 1; /* Постепенное появление элемента */
+  transform: translateY(0); /* Появление сверху */
 }
 
 .offer__card.active {
-    opacity: 1; /* Постепенное появление элемента */
-    transform: translateY(0); /* Появление сверху */
+  opacity: 1; /* Постепенное появление элемента */
+  transform: translateY(0); /* Появление сверху */
 }
-
-
 
 .offer {
   max-width: 1180px; /* Максимальная ширина хедера */
@@ -1187,279 +1190,7 @@ html {
   }
 }
 
-/* Стили для мобильных устройств */
-@media (max-width: 430px) {
-  body {
-    overflow-x: hidden;
-    margin: 0 auto;
-    width: auto;
-  }
-  .header {
-    width: max-content;
-    margin: 0;
-    padding: 30px 0px;
-  }
 
-  .header__menu {
-    display: none; /* Скрываем меню на мобильных устройствах */
-  }
-
-  .header__social-link {
-    align-items: center;
-    border-radius: 50%;
-    background-color: white;
-    display: inline-flex;
-    justify-content: center;
-    width: 38px;
-    height: 38px;
-    margin-right: 10px;
-  }
-
-  .header__logo {
-    margin-right: 67px;
-  }
-
-  .footer {
-    padding-top: 36px;
-  }
-
-  .footer__menu {
-    display: none; /* Скрываем меню на мобильных устройствах */
-  }
-
-  .footer__social-link {
-    align-items: center;
-    border-radius: 50%;
-    background-color: white;
-    display: inline-flex;
-    justify-content: center;
-    width: 38px;
-    height: 38px;
-    margin-right: 10px;
-  }
-
-  .content {
-    display: flex;
-    width: 100%;
-    padding: 5px;
-    flex-direction: column;
-  }
-
-  .content__text {
-    display: flex;
-    padding-right: 0px;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-  }
-  .content__title {
-    font-size: 40px;
-  }
-
-  .content__item {
-    font-size: 14px;
-  }
-
-  .content__btn {
-    padding: 20px 40px;
-    font-size: 16px;
-  }
-
-  .content__image {
-    position: relative;
-    left: 0px;
-    top: 0px;
-    max-width: 100%;
-    height: auto;
-  }
-  .offer {
-    max-width: 390px;
-  }
-  .offer__card {
-    margin-left: 50px;
-
-    background-repeat: no-repeat;
-    width: 280px;
-  }
-
-  .offer__title {
-    font-size: 28px;
-  }
-  .new-cars__title {
-    font-size: 28px;
-  }
-
-  .income__title {
-    font-size: 28px;
-    margin: 10px 10px;
-  }
-
-  .requirements {
-    max-width: 390px;
-    height: auto;
-    border: 11px solid #f4f4f4;
-  }
-
-  .requirements__title {
-    font-size: 28px;
-  }
-
-  .requirements__description p {
-    font-size: 14px;
-  }
-
-  .requirements__list {
-    width: 320px;
-    display: flex;
-    padding-bottom: 22px;
-    flex-direction: column;
-  }
-  .requirements__additional ul {
-    display: flex;
-    margin-bottom: 20px;
-    font-weight: 500;
-    font-size: 20px;
-    flex-direction: column;
-    padding: 0px;
-    width: 320px;
-  }
-
-  .requirements__column ul {
-    padding: 0;
-    /* Другие стили для <ul> элемента */
-  }
-
-  .requirements__additional {
-    padding-bottom: 20px;
-  }
-
-  .requirements__btn {
-    display: inline-block;
-    padding: 15px 20px;
-    background-color: #292727;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 15px;
-    font-size: 22px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-
-  .requirements__list__add {
-    position: relative;
-    width: 370px;
-  }
-
-  .requirements__image {
-    width: 90%;
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-
-  .requirements__image img {
-    width: 311px;
-  }
-
-  .requirements__item {
-    font-size: 16px;
-  }
-
-  .requirements__description {
-    margin-bottom: 20px;
-  }
-
-  .requirements__column {
-    width: 300px;
-  }
-
-  .earn-money {
-    padding: 10px 56px;
-    background-image: none;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .earn-money__title {
-    font-size: 28px;
-    text-align: left;
-  }
-
-  .earn-money__items {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
-    flex-direction: column;
-  }
-
-  .about-company {
-    margin: 0 auto;
-    border-radius: 40px;
-    background-color: #292727;
-    width: 390px;
-    height: auto;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    flex-direction: column;
-  }
-
-  .about-company__content {
-    flex: 1;
-    padding: 0;
-    color: white;
-  }
-
-  .about-company__title {
-    font-size: 28px;
-  }
-
-  .about-company_wrapper {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-  }
-
-  .about-company__text p {
-    margin: 10px 26px 15px 28px;
-    font-weight: 400;
-    font-size: 14px;
-    text-indent: 20px;
-  }
-
-  .about-para {
-    margin-left: 20px !important;
-  }
-
-  .contacts {
-    padding: 20px 30px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contacts__text {
-    width: 100%;
-  }
-
-  .contacts__photo {
-    width: 100%;
-  }
-
-  .contacts__text h2 {
-    font-weight: 600;
-    font-size: 28px;
-    padding-bottom: 10px;
-  }
-
-  .contacts__text p strong {
-    font-size: 16px;
-  }
-
-  .contacts__text p:last-child {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-}
 
 @media (max-width: 768px) {
   .content {
@@ -1477,7 +1208,6 @@ html {
     left: 425px;
   }
 
-
   .content__text {
     display: flex;
     flex: 1;
@@ -1485,7 +1215,7 @@ html {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-}
+  }
 
   .requirements__image img {
     width: 341px;
@@ -1565,3 +1295,286 @@ html {
     padding: 35px 40px;
   }
 }
+
+/* Стили для мобильных устройств */
+@media (max-width: 430px) {
+    body {
+      overflow-x: hidden;
+      margin: 0 auto;
+      width: auto;
+    }
+    .header {
+      width: max-content;
+      margin: 0;
+      padding: 30px 0px;
+    }
+  
+    .header__menu {
+      display: none; /* Скрываем меню на мобильных устройствах */
+    }
+  
+    .header__social-link {
+      align-items: center;
+      border-radius: 50%;
+      background-color: white;
+      display: inline-flex;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      margin-right: 10px;
+    }
+  
+    .header__logo {
+      margin-right: 67px;
+    }
+  
+    .footer {
+      padding-top: 36px;
+    }
+  
+    .footer__menu {
+      display: none; /* Скрываем меню на мобильных устройствах */
+    }
+  
+    .footer__social-link {
+      align-items: center;
+      border-radius: 50%;
+      background-color: white;
+      display: inline-flex;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      margin-right: 10px;
+    }
+  
+    .content {
+      display: flex;
+      width: 100%;
+      padding: 5px;
+      flex-direction: column;
+    }
+  
+    .content__text {
+      display: flex;
+      padding-right: 0px;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+    }
+    .content__title {
+      font-size: 40px;
+    }
+  
+    .content__item {
+      font-size: 14px;
+    }
+  
+    .content__btn {
+      padding: 20px 40px;
+      font-size: 16px;
+    }
+  
+    .content__image {
+      position: relative;
+      left: 0px;
+      top: 0px;
+      max-width: 100%;
+      height: auto;
+    }
+    .offer {
+      max-width: 390px;
+    }
+    .offer__card {
+      margin-left: 50px;
+  
+      background-repeat: no-repeat;
+      width: 280px;
+    }
+  
+    .offer__cards {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(280px, 1fr)
+      ); /* Колонки, которые будут занимать доступное пространство, каждая ширина 280px, при этом увеличиваясь по мере возможности */
+      grid-gap: 20px; /* Отступы между карточками */
+    }
+  
+    .offer__title {
+      font-size: 28px;
+    }
+    .new-cars__title {
+      font-size: 28px;
+    }
+  
+    .income__title {
+      font-size: 28px;
+      margin: 10px 10px;
+    }
+  
+    .requirements {
+      max-width: 390px;
+      height: auto;
+      border: 11px solid #f4f4f4;
+    }
+  
+    .requirements__title {
+      font-size: 28px;
+    }
+  
+    .requirements__description p {
+      font-size: 14px;
+    }
+  
+    .requirements__list {
+      width: 320px;
+      display: flex;
+      padding-bottom: 22px;
+      flex-direction: column;
+    }
+    .requirements__additional ul {
+      display: flex;
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 20px;
+      flex-direction: column;
+      padding: 0px;
+      width: 320px;
+    }
+  
+    .requirements__column ul {
+      padding: 0;
+      /* Другие стили для <ul> элемента */
+    }
+  
+    .requirements__additional {
+      padding-bottom: 20px;
+    }
+  
+    .requirements__btn {
+      display: inline-block;
+      padding: 15px 20px;
+      background-color: #292727;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 15px;
+      font-size: 22px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+  
+    .requirements__list__add {
+      position: relative;
+      width: 370px;
+    }
+  
+    .requirements__image {
+      width: 90%;
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  
+    .requirements__image img {
+      width: 311px;
+    }
+  
+    .requirements__item {
+      font-size: 16px;
+    }
+  
+    .requirements__description {
+      margin-bottom: 20px;
+    }
+  
+    .requirements__column {
+      width: 300px;
+    }
+  
+    .earn-money {
+      padding: 10px 56px;
+      background-image: none;
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .earn-money__title {
+      font-size: 28px;
+      text-align: left;
+    }
+  
+    .earn-money__items {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 20px;
+      flex-direction: column;
+    }
+  
+    .about-company {
+      margin: 0 auto;
+      border-radius: 40px;
+      background-color: #292727;
+      width: 390px;
+      height: auto;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      flex-direction: column;
+    }
+  
+    .about-company__content {
+      flex: 1;
+      padding: 0;
+      color: white;
+    }
+  
+    .about-company__title {
+      font-size: 28px;
+    }
+  
+    .about-company_wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+  
+    .about-company__text p {
+      margin: 10px 26px 15px 28px;
+      font-weight: 400;
+      font-size: 14px;
+      text-indent: 20px;
+    }
+  
+    .about-para {
+      margin-left: 20px !important;
+    }
+  
+    .contacts {
+      padding: 20px 30px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .contacts__text {
+      width: 100%;
+    }
+  
+    .contacts__photo {
+      width: 100%;
+    }
+  
+    .contacts__text h2 {
+      font-weight: 600;
+      font-size: 28px;
+      padding-bottom: 10px;
+    }
+  
+    .contacts__text p strong {
+      font-size: 16px;
+    }
+  
+    .contacts__text p:last-child {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
