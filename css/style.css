@@ -717,7 +717,7 @@ html {
 }
 
 .reviews__slider {
-  width: 100%;
+    width: 1400px;
   padding: 20px 20px 60px 20px;
   overflow-x: hidden;
 }
@@ -951,6 +951,12 @@ html {
     font-size: 12px;
   }
 
+  .income__slider {
+    width: 1400px;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
   .content__btn {
     padding: 20px 40px;
     font-size: 16px;
@@ -985,9 +991,6 @@ html {
     margin: 10px 10px;
   }
 
-  .swiper-slide {
-    width: 250px !important; /* Ширина слайда */
-  }
 
   .requirements {
     max-width: 390px;
@@ -1259,9 +1262,6 @@ html {
     margin: 10px 10px;
   }
 
-  .swiper-slide {
-    width: 250px !important; /* Ширина слайда */
-  }
 
   .requirements {
     max-width: 390px;
