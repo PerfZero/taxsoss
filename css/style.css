@@ -1,109 +1,108 @@
 body {
-    position: relative;
-    font-family: "Museo Sans Cyrl", sans-serif;
-  }
-  
-  h1 {
-    font-weight: 900;
-  }
-  
-  i {
-    font-weight: 100;
-  }
-  
-  /* Box sizing rules */
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-  
-  /* Prevent font size inflation */
-  html {
-    -moz-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-  }
-  
-  /* Remove default margin in favour of better control in authored CSS */
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  p,
-  figure,
-  blockquote,
-  dl,
-  dd {
-    margin: 0;
-    color: #203842;
-  }
-  
-  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-  ul[role="list"],
-  ol[role="list"] {
-    list-style: none;
-  }
-  
-  /* Set core body defaults */
-  body {
-    line-height: 1.5;
-  }
-  
-  /* Set shorter line heights on headings and interactive elements */
-  h1,
-  h2,
-  h3,
-  h4,
-  button,
-  input,
-  label {
-    line-height: 1.1;
-  }
-  
-  button {
-    cursor: pointer;
-  }
-  
-  /* Balance text wrapping on headings */
-  h1,
-  h2,
-  h3,
-  h4 {
-    text-wrap: balance;
-  }
-  
-  /* A elements that don't have a class get default styles */
-  a:not([class]) {
-    text-decoration-skip-ink: auto;
-    color: currentColor;
-    text-decoration: none;
-  }
-  
-  /* Make images easier to work with */
-  img,
-  picture {
-    padding: 1px;
-  }
-  
-  /* Inherit fonts for inputs and buttons */
-  input,
-  textarea,
-  select {
-    font: inherit;
-  }
-  
-  /* Make sure textarea without a rows attribute are not tiny */
-  textarea:not([rows]) {
-    min-height: 10em;
-  }
-  
-  /* Anything that has been anchored to should have extra scroll margin */
-  :target {
-    scroll-margin-block: 5ex;
-  }
-  
+  position: relative;
+  font-family: "Museo Sans Cyrl", sans-serif;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+i {
+  font-weight: 100;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  color: #203842;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  padding: 1px;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textarea without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
 
 body,
 html {
@@ -505,7 +504,7 @@ html {
 .requirements {
   position: relative;
   margin: 0 auto;
-  width: 1368px;
+  width: auto;
   height: 685px;
   background-color: #fed002;
   padding: 40px 20px;
@@ -655,7 +654,7 @@ html {
   margin: 0 auto;
   border-radius: 40px;
   background-color: #292727;
-  width: 1380px;
+  width: auto;
   height: auto;
   display: flex;
   align-items: center;
@@ -664,13 +663,13 @@ html {
 }
 
 .about-company_wrapper {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
 }
 
-.about-para{
-    margin-left: -350px !important;
+.about-para {
+  margin-left: -350px !important;
 }
 
 .about-company__image {
@@ -685,15 +684,16 @@ html {
 }
 
 .about-company_wrapper {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
 }
 
 .about-company__title {
   font-weight: 700;
   font-size: 50px;
   text-align: center;
+  color: #fff;
 }
 
 .about-company__text {
@@ -705,6 +705,7 @@ html {
   font-weight: 400;
   font-size: 22px;
   text-indent: 20px;
+  color: #fff;
 }
 
 .reviews__title {
@@ -833,6 +834,46 @@ html {
   height: 48px;
   margin-right: 5px;
 }
+
+@media (max-width: 1280px) {
+    body {
+      overflow-x: hidden;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .header__menu-item {
+      font-size: 14px;
+    }
+  
+    .content__image {
+      left: 542px;
+      top: 61px;
+      position: absolute;
+      max-width: 53%;
+      height: auto;
+    }
+  
+    .requirements__image {
+      width: 131px;
+      position: absolute;
+      top: 160px;
+      left: 470px;
+    }
+  
+    .requirements__image img {
+      width: 750px;
+    }
+  
+    .earn-money {
+      margin: 50px auto;
+      background-image: url(/img/div.layer.png);
+      background-size: cover;
+      width: 100%;
+      height: 209px;
+      padding: 20px;
+    }
+  }
+
 
 /* Стили для мобильных устройств */
 @media (max-width: 390px) {
@@ -1033,98 +1074,63 @@ html {
     align-items: center;
     padding: 20px;
     flex-direction: column;
-}
+  }
 
-.about-company__content {
+  .about-company__content {
     flex: 1;
-padding: 0;
+    padding: 0;
     color: white;
-}
+  }
 
-.about-company__title{
+  .about-company__title {
     font-size: 28px;
-}
+  }
 
-.about-company_wrapper {
+  .about-company_wrapper {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-}
+  }
 
-.about-company__text p {
+  .about-company__text p {
     margin: 10px 26px 15px 28px;
     font-weight: 400;
     font-size: 14px;
     text-indent: 20px;
-}
+  }
 
-.about-para{
+  .about-para {
     margin-left: 20px !important;
-}
+  }
 
-.contacts {
+  .contacts {
     padding: 20px 30px;
     display: flex;
     flex-direction: column;
-}
+  }
 
-.contacts__text {
+  .contacts__text {
     width: 100%;
-}
+  }
 
-.contacts__photo {
+  .contacts__photo {
     width: 100%;
-}
+  }
 
-.contacts__text h2 {
+  .contacts__text h2 {
     font-weight: 600;
     font-size: 28px;
     padding-bottom: 10px;
-}
+  }
 
-.contacts__text p strong {
+  .contacts__text p strong {
     font-size: 16px;
-}
+  }
 
-.contacts__text p:last-child{
+  .contacts__text p:last-child {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
 }
 
-}
 
-
-@media (max-width: 1280px) {
-    body{
-        overflow-x: hidden;
-        margin: 0  auto;
-        width: 100%;
-    }
-    .header__menu-item{
-        font-size: 14px;
-    }
-
-    .content__image {
-        left: 542px;
-        top: 61px;
-        position: absolute;
-        max-width: 53%;
-        height: auto;
-    }
-
-    .requirements__image {
-        width: 131px;
-        position: absolute;
-        top: 98px;
-        left: 470px;
-    }
-
-    .earn-money {
-        margin: 50px auto;
-        background-image: url(/img/div.layer.png);
-        background-size: cover;
-        width: 100%;
-        height: 209px;
-        padding: 20px;
-    }
-}
