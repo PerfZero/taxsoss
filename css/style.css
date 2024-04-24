@@ -325,6 +325,7 @@ html {
 .offer__card--2 {
   background-image: url(/img/wallet.png);
   align-content: flex-end;
+  display: grid;
 }
 
 .offer__card--2 .offer__description {
@@ -368,6 +369,7 @@ html {
 .offer__card--4 {
   background-image: url(/img/location.png);
   align-content: flex-end;
+  display: grid;    
 }
 
 .offer__card--4 .offer__description {
@@ -675,17 +677,18 @@ html {
 }
 
 .earn-money__circle {
-  align-content: center;
-  display: inline-block;
-  width: 60px; /* Ширина кружка */
-  height: 60px; /* Высота кружка */
-  background-color: #fed002; /* Цвет кружка */
-  color: #fff;
-  border-radius: 50%; /* Скругление краев для создания круга */
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 137%;
-  margin-bottom: 10px; /* Отступ между кружком и текстом */
+    align-content: center;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #fed002;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 137%;
+    margin-bottom: 10px;
+    display: grid;
 }
 
 .earn-money__text {
@@ -699,7 +702,7 @@ html {
 }
 
 .about-company {
-  margin: 0 auto;
+    margin: 0px 15px;
   border-radius: 40px;
   background-color: #292727;
   width: auto;
@@ -752,7 +755,7 @@ html {
 .about-company__text p {
   margin: 20px 66px 15px 48px;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   text-indent: 20px;
   color: #fff;
 }
@@ -913,12 +916,12 @@ html {
   .requirements__image {
     width: 131px;
     position: absolute;
-    top: 160px;
-    left: 470px;
+    top: 312px;
+    left: 576px;
   }
 
   .requirements__image img {
-    width: 750px;
+    width: 651.8px;
   }
 
   .earn-money {
@@ -943,6 +946,9 @@ html {
     box-sizing: border-box;
     height: 360px;
     width: 280px;
+  }
+  .footer__menu-item{
+    font-size: 14px;
   }
 }
 
