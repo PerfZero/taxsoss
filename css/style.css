@@ -1627,4 +1627,9 @@ html {
   .requirements__list__add {
     width: auto;
   }
+
+  .earn-money {
+    padding: 10px 26px;
+}
+}
 }
