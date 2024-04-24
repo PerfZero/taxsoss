@@ -876,7 +876,7 @@ html {
 
 
 /* Стили для мобильных устройств */
-@media (max-width: 390px) {
+@media (max-width: 500px) {
   .header {
     width: max-content;
     margin: 0;
