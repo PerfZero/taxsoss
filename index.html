@@ -79,7 +79,7 @@
     </div>
 
     <div class="offer">
-      <h2 class="offer__title">Таксопарк предлагает</h2>
+      <h2 class="offer__title ">Таксопарк предлагает</h2>
       <div class="offer__cards">
         <div class="offer__card offer__card--1">
           <h3 class="offer__heading">Заработок до 500.000 тг в месяц</h3>
@@ -463,5 +463,26 @@
     }
   }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    var text = document.querySelector(".content__text");
+    var photo = document.querySelector(".content__photo");
+
+    text.classList.add("active");
+    photo.classList.add("active");
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    var title = document.querySelector(".offer__title");
+    var cards = document.querySelectorAll(".offer__card");
+
+    title.classList.add("active");
+
+    cards.forEach(function(card) {
+        card.classList.add("active");
+    });
+});
+
+
 
 </script>
