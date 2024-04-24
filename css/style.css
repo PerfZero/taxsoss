@@ -1057,6 +1057,11 @@ html {
     width: 300px;
   }
 
+  .requirements__column ul {
+    padding: 0;
+    /* Другие стили для <ul> элемента */
+  }
+
   .earn-money {
     padding: 10px 56px;
     background-image: none;
@@ -1217,7 +1222,7 @@ html {
   }
 
   .content__item {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .content__btn {
@@ -1284,6 +1289,17 @@ html {
     font-weight: 500;
     font-size: 20px;
     flex-direction: column;
+    padding: 0px;
+    width: 320px;
+  }
+
+  .requirements__column ul {
+    padding: 0;
+    /* Другие стили для <ul> элемента */
+  }
+
+  .requirements__additional{
+    padding-bottom: 20px;
   }
 
   .requirements__btn {
