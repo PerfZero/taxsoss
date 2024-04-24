@@ -717,7 +717,7 @@ html {
 }
 
 .reviews__slider {
-    width: 1400px;
+  width: 100%;
   padding: 20px 20px 60px 20px;
   overflow-x: hidden;
 }
@@ -951,12 +951,6 @@ html {
     font-size: 12px;
   }
 
-  .income__slider {
-    width: 1400px;
-    padding: 20px;
-    overflow-x: hidden;
-}
-
   .content__btn {
     padding: 20px 40px;
     font-size: 16px;
@@ -990,7 +984,6 @@ html {
     font-size: 28px;
     margin: 10px 10px;
   }
-
 
   .requirements {
     max-width: 390px;
