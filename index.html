@@ -79,7 +79,7 @@
     </div>
 
     <div class="offer">
-      <h2 class="offer__title ">Таксопарк предлагает</h2>
+      <h2 class="offer__title">Таксопарк предлагает</h2>
       <div class="offer__cards">
         <div class="offer__card offer__card--1">
           <h3 class="offer__heading">Заработок до 500.000 тг в месяц</h3>
@@ -240,17 +240,11 @@
         </div>
         <div class="earn-money__item">
           <span class="earn-money__circle">2</span>
-          <p class="earn-money__text">
-            Получить
-            консультацию
-          </p>
+          <p class="earn-money__text">Получить консультацию</p>
         </div>
         <div class="earn-money__item">
           <span class="earn-money__circle">3</span>
-          <p class="earn-money__text">
-            Отправить
-            документы
-          </p>
+          <p class="earn-money__text">Отправить документы</p>
         </div>
         <div class="earn-money__item">
           <span class="earn-money__circle">4</span>
@@ -367,9 +361,29 @@
           </p>
           <p><strong>Единый номер таксопарка</strong> <br />8 707 840 80 01</p>
         </div>
-        <div class="contacts__photo">
-          <img src="/img/map.png" alt="Фотография офиса" />
-        </div>
+        <a
+          class="dg-widget-link"
+          href="http://2gis.kz/almaty/profiles/70000001040607092,70000001083713520/center/76.90464019775392,43.27695536700451/zoom/12?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap"
+          >Посмотреть на карте Алматы</a
+        >
+        <script
+          charset="utf-8"
+          src="https://widgets.2gis.com/js/DGWidgetLoader.js"
+        ></script>
+        <script charset="utf-8">
+          new DGWidgetLoader({
+            width: 640,
+            height: 300,
+            borderColor: "#a3a3a3",
+            pos: { lat: 43.27695536700451, lon: 76.90464019775392, zoom: 12 },
+            opt: { city: "almaty" },
+            org: [{ id: "70000001040607092" }, { id: "70000001083713520" }],
+          });
+        </script>
+        <noscript style="color: #c00; font-size: 16px; font-weight: bold"
+          >Виджет карты использует JavaScript. Включите его в настройках вашего
+          браузера.</noscript
+        >
       </div>
     </div>
 
@@ -422,67 +436,64 @@
 <script>
   var swiper = new Swiper(".income__slider", {
     slidesPerView: 5,
-  spaceBetween: 20,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,      
-  },
-  breakpoints: {
-    // Планшеты и мобильные устройства (ширина экрана < 991px)
-    390: {
-      slidesPerView: 1,
-      spaceBetween: 10 // пространство между слайдами для мобильных устройств
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
-    // ПК и ноутбуки (ширина экрана >= 991px)
-    992: {
-      slidesPerView: 5,
-      spaceBetween: 20 // пространство между слайдами для ПК и ноутбуков
-    }
-  }
-});
+    breakpoints: {
+      // Планшеты и мобильные устройства (ширина экрана < 991px)
+      390: {
+        slidesPerView: 1,
+        spaceBetween: 10, // пространство между слайдами для мобильных устройств
+      },
+      // ПК и ноутбуки (ширина экрана >= 991px)
+      992: {
+        slidesPerView: 5,
+        spaceBetween: 20, // пространство между слайдами для ПК и ноутбуков
+      },
+    },
+  });
 
   var swiper = new Swiper(".reviews__slider", {
-  slidesPerView: 5,
-  spaceBetween: 20,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,      
-  },
-  breakpoints: {
-    // Планшеты и мобильные устройства (ширина экрана < 991px)
-    390: {
-      slidesPerView: 1,
-      spaceBetween: 10 // пространство между слайдами для мобильных устройств
+    slidesPerView: 5,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
-    // ПК и ноутбуки (ширина экрана >= 991px)
-    992: {
-      slidesPerView: 5,
-      spaceBetween: 20 // пространство между слайдами для ПК и ноутбуков
-    }
-  }
-});
+    breakpoints: {
+      // Планшеты и мобильные устройства (ширина экрана < 991px)
+      390: {
+        slidesPerView: 1,
+        spaceBetween: 10, // пространство между слайдами для мобильных устройств
+      },
+      // ПК и ноутбуки (ширина экрана >= 991px)
+      992: {
+        slidesPerView: 5,
+        spaceBetween: 20, // пространство между слайдами для ПК и ноутбуков
+      },
+    },
+  });
 
-document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function () {
     var text = document.querySelector(".content__text");
     var photo = document.querySelector(".content__photo");
 
     text.classList.add("active");
     photo.classList.add("active");
-});
+  });
 
-document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function () {
     var title = document.querySelector(".offer__title");
     var cards = document.querySelectorAll(".offer__card");
 
     title.classList.add("active");
 
-    cards.forEach(function(card) {
-        card.classList.add("active");
+    cards.forEach(function (card) {
+      card.classList.add("active");
     });
-});
-
-
-
+  });
 </script>
