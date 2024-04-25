@@ -134,7 +134,7 @@ html {
 }
 
 .header__menu-item {
-  padding-right: 20px;
+  padding-right: 16px;
   font-size: 16px;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.5);
@@ -162,8 +162,8 @@ html {
   background-color: white;
   display: inline-flex;
   justify-content: center;
-  width: 3vw;
-  height: 3vw;
+  width: 40px;
+  height:40px;
   margin-right: 5px;
 }
 
@@ -620,7 +620,7 @@ html {
   margin: 50px auto;
   background-image: url("/img/div.layer.png"); /* Путь к фоновой картинке */
   background-size: cover;
-  width: 1440px; /* Ширина блока */
+  width: auto; /* Ширина блока */
   height: 209px; /* Высота блока */
   padding: 20px; /* Поля внутри блока */
 }
@@ -634,9 +634,11 @@ html {
 }
 
 .earn-money__items {
+  margin: 0 auto;
+  max-width: 1440px;
   display: flex;
-  justify-content: space-evenly; /* Равномерное распределение пунктов по ширине */
-  margin-top: 20px; /* Отступ сверху */
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 .earn-money__item {
@@ -855,8 +857,8 @@ html {
   background-color: white;
   display: inline-flex;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height:40px;
   margin-right: 5px;
 }
 
