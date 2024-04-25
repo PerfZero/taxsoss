@@ -762,7 +762,7 @@ html {
   width: auto;
 }
 .contacts__text {
-  width: 52%; /* Ширина блока с текстом */
+  width: 100%;
 }
 
 .contacts__photo {
