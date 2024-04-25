@@ -361,25 +361,21 @@
           </p>
           <p><strong>Единый номер таксопарка</strong> <br />8 707 840 80 01</p>
         </div>
-        <a
-          class="dg-widget-link"
-          href="http://2gis.kz/almaty/profiles/70000001040607092,70000001083713520/center/76.90464019775392,43.27695536700451/zoom/12?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap"
-          >Посмотреть на карте Алматы</a
-        >
-        <script
-          charset="utf-8"
-          src="https://widgets.2gis.com/js/DGWidgetLoader.js"
-        ></script>
+        <a class="dg-widget-link" href="https://2gis.kz/almaty/profiles/70000001040607092,70000001083713520/center/76.90464019775392,43.27695536700451/zoom/12?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a>
+
+        <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
+        
         <script charset="utf-8">
           new DGWidgetLoader({
-            width: 640,
-            height: 300,
+            width: '100%', // Измените ширину виджета на 100% для мобильной версии
+            height: '300px', // Установите высоту виджета по вашему усмотрению
             borderColor: "#a3a3a3",
             pos: { lat: 43.27695536700451, lon: 76.90464019775392, zoom: 12 },
             opt: { city: "almaty" },
             org: [{ id: "70000001040607092" }, { id: "70000001083713520" }],
           });
         </script>
+        
         <noscript style="color: #c00; font-size: 16px; font-weight: bold"
           >Виджет карты использует JavaScript. Включите его в настройках вашего
           браузера.</noscript
