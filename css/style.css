@@ -264,7 +264,7 @@ html {
 
 .offer__card--1 {
   background-image: url(/img/gradient.png);
-  --animate-duration: 0.5s;
+  --animate-duration: 1s;
 }
 
 .offer__card--1 .offer__description {
@@ -288,7 +288,7 @@ html {
   background-image: url(/img/wallet.png);
   align-content: flex-end;
   display: grid;
-  --animate-duration: 0.7s;
+  --animate-duration: 1.2s;
 }
 
 .offer__card--2 .offer__description {
@@ -310,7 +310,7 @@ html {
 
 .offer__card--3 {
   background-image: url(/img/office_work.png);
-  --animate-duration: 0.9s;
+  --animate-duration: 1.5s;
 }
 
 .offer__card--3 .offer__description {
@@ -334,7 +334,7 @@ html {
   background-image: url(/img/location.png);
   align-content: flex-end;
   display: grid;    
-  --animate-duration: 1s;
+  --animate-duration: 1.7s;
 }
 
 .offer__card--4 .offer__description {
