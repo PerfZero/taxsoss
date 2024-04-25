@@ -1,3 +1,4 @@
+
 body {
   position: relative;
   font-family: "Museo Sans Cyrl", sans-serif;
@@ -233,46 +234,6 @@ html {
   transition: background-color 0.3s; /* Плавное изменение цвета при наведении */
 }
 
-.content__text {
-  opacity: 0; /* Начальное состояние: элемент невидимый */
-  transform: translateX(
-    -100%
-  ); /* Начальное положение: за пределами видимой области слева */
-  transition: opacity 0.5s, transform 0.9s ease-in-out; /* Плавное изменение прозрачности и положения */
-}
-/* Анимация появления при добавлении класса */
-.content__text.active {
-  opacity: 1; /* Постепенное появление элемента */
-  transform: translateX(0); /* Появление слева */
-}
-
-.offer__title {
-  opacity: 0; /* Начальное состояние: элемент невидимый */
-  transform: translateY(
-    -100px
-  ); /* Начальное положение: над областью видимости, сверху */
-  transition: opacity 0.5s, transform 1.2s; /* Плавное изменение прозрачности и положения */
-}
-
-.offer__card {
-  opacity: 0; /* Начальное состояние: элемент невидимый */
-  transform: translateY(
-    -100px
-  ); /* Начальное положение: над областью видимости, сверху */
-  transition: opacity 0.5s, transform 1.9s; /* Плавное изменение прозрачности и положения */
-}
-
-/* Анимация появления при добавлении класса */
-.offer__title.active {
-  opacity: 1; /* Постепенное появление элемента */
-  transform: translateY(0); /* Появление сверху */
-}
-
-.offer__card.active {
-  opacity: 1; /* Постепенное появление элемента */
-  transform: translateY(0); /* Появление сверху */
-}
-
 .offer {
   max-width: 1180px; /* Максимальная ширина хедера */
   margin: 0 auto; /* Центрирование хедера на странице */
@@ -303,6 +264,7 @@ html {
 
 .offer__card--1 {
   background-image: url(/img/gradient.png);
+  --animate-duration: 0.5s;
 }
 
 .offer__card--1 .offer__description {
@@ -326,6 +288,7 @@ html {
   background-image: url(/img/wallet.png);
   align-content: flex-end;
   display: grid;
+  --animate-duration: 0.7s;
 }
 
 .offer__card--2 .offer__description {
@@ -347,6 +310,7 @@ html {
 
 .offer__card--3 {
   background-image: url(/img/office_work.png);
+  --animate-duration: 0.9s;
 }
 
 .offer__card--3 .offer__description {
@@ -370,6 +334,7 @@ html {
   background-image: url(/img/location.png);
   align-content: flex-end;
   display: grid;    
+  --animate-duration: 1s;
 }
 
 .offer__card--4 .offer__description {
@@ -407,9 +372,15 @@ html {
   padding-bottom: 25px;
 }
 
+
+
+
 .new-cars {
   text-align: center;
   margin-bottom: 30px;
+
+
+
 }
 
 .new-cars__title {
@@ -494,6 +465,8 @@ html {
 .income {
   margin-bottom: 50px;
 }
+
+
 
 .income__title {
   font-weight: 700;

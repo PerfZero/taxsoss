@@ -11,9 +11,18 @@
 
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+      </script>
   </head>
   <body>
     <header class="header">
@@ -60,35 +69,35 @@
 
     <div class="content">
       <div class="content__text">
-        <h2 class="content__title">
+        <h2 class="content__title wow animate__animated animate__fadeInLeft">
           Работа в такси Алматы <br />50/50<br />
           день/ночь
         </h2>
-        <ul class="content__list">
+        <ul class="content__list wow animate__animated animate__fadeInLeft animate__delay-1s">
           <li class="content__item">Чистый доход от 100.000 тенге за неделю</li>
           <li class="content__item">
             Новые автомобили класса комфорт и комфорт+
           </li>
           <li class="content__item">Топливо за счет автопарка</li>
         </ul>
-        <a href="#" class="btn content__btn">Забронировать авто</a>
+        <a href="#" class="btn content__btn wow animate__animated animate__fadeInLeft animate__delay-1s">Забронировать авто</a>
       </div>
       <div class="content__photo">
-        <img src="/img/taxi_white.png" alt="taxi" class="content__image" />
+        <img src="/img/taxi_white.png" alt="taxi" class="content__image wow animate__animated animate__fadeInRight" />
       </div>
     </div>
 
     <div class="offer">
       <h2 class="offer__title">Таксопарк предлагает</h2>
       <div class="offer__cards">
-        <div class="offer__card offer__card--1">
+        <div class="offer__card offer__card--1 wow animate__animated animate__fadeInDown animate__delay-0.5s">
           <h3 class="offer__heading">Заработок до 500.000 тг в месяц</h3>
           <p class="offer__description">
             Достойный доход 50/50 от выручки за смену Выплата вознаграждения
             каждую неделю
           </p>
         </div>
-        <div class="offer__card offer__card--2">
+        <div class="offer__card offer__card--2 wow animate__animated animate__fadeInDown animate__delay-0.5s">
           <h3 class="offer__heading">
             Без депозита и без первоначального взноса
           </h3>
@@ -96,13 +105,13 @@
             Для получения автомобиля- нужны только водительские права
           </p>
         </div>
-        <div class="offer__card offer__card--3">
+        <div class="offer__card offer__card--3 wow animate__animated animate__fadeInDown animate__delay-0.5s">
           <h3 class="offer__heading">Офисы таксопарка рядом с Вами</h3>
           <p class="offer__description">
             Подберите для себя удобный офис для пересменки авто
           </p>
         </div>
-        <div class="offer__card offer__card--4">
+        <div class="offer__card offer__card--4 wow animate__animated animate__fadeInDown animate__delay-0.5s">
           <h3 class="offer__heading">Все расходы на таксопарке</h3>
           <p class="offer__description">
             Топливо и ремонт автомобиля за счет таксопарка
@@ -111,7 +120,7 @@
       </div>
     </div>
 
-    <div class="new-cars">
+    <div class="new-cars wow animate__animated animate__fadeInRight">
       <h2 class="new-cars__title">
         Новые автомобили класса комфорт и комфорт+
       </h2>
@@ -361,21 +370,28 @@
           </p>
           <p><strong>Единый номер таксопарка</strong> <br />8 707 840 80 01</p>
         </div>
-        <a class="dg-widget-link" href="https://2gis.kz/almaty/profiles/70000001040607092,70000001083713520/center/76.90464019775392,43.27695536700451/zoom/12?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a>
+        <a
+          class="dg-widget-link"
+          href="https://2gis.kz/almaty/profiles/70000001040607092,70000001083713520/center/76.90464019775392,43.27695536700451/zoom/12?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap"
+          >Посмотреть на карте Алматы</a
+        >
 
-        <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
-        
+        <script
+          charset="utf-8"
+          src="https://widgets.2gis.com/js/DGWidgetLoader.js"
+        ></script>
+
         <script charset="utf-8">
           new DGWidgetLoader({
-            width: '100%', // Измените ширину виджета на 100% для мобильной версии
-            height: '300px', // Установите высоту виджета по вашему усмотрению
+            width: "100%", // Измените ширину виджета на 100% для мобильной версии
+            height: "300px", // Установите высоту виджета по вашему усмотрению
             borderColor: "#fff",
             pos: { lat: 43.27695536700451, lon: 76.90464019775392, zoom: 12 },
             opt: { city: "almaty" },
             org: [{ id: "70000001040607092" }, { id: "70000001083713520" }],
           });
         </script>
-        
+
         <noscript style="color: #c00; font-size: 16px; font-weight: bold"
           >Виджет карты использует JavaScript. Включите его в настройках вашего
           браузера.</noscript
